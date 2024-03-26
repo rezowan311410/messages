@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages</title>
+    <!-- css -->
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- =================================================--
+                     main part start
+    ====================================================== -->
+    <div class="main">
+      <!--container-->
+      <div class="container mx-auto flex">
+        <!-- ==============================================--
+                     chat_leftSideBar part start
+      ===================================================== -->
+        <div
+          class="chat_leftSideBar h-[1000px] w-[16.32%] p-3 bg-bg_primary border-r border-border_color"
+        >
+          <!--main icon div start-->
+          <div class="icon flex justify-between">
+            <div class="left_icon w-[76px] h-11">
+              <img src="./assets/images/After the school bell logo 2.png" />
+            </div>
+            <div class="right_icon">
+              <span
+                class="mt-[12px] inline-block w-6 h-6 bg-bg_secondary text-[#9DA4AE] flex justify-center items-center"
+              >
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+          </div>
+          <!--main icon div end-->
+          <!-- menu part start -->
+          <div class="menu mt-10">
+            <div class="list">
+              <ul>
+                <!-- li start -->
+                <li class="text-nav_iconColor flex px-3">
+                  <i class="fa-solid fa-house text-2xl"></i>
+
+                  <h5 class="ml-3 font-inter text-sm font-medium mt-[4px]">
+                    Home
+                  </h5>
+                </li>
+                <!-- li end -->
+                <!-- li start -->
+                <li class="text-nav_iconColor mt-6 flex px-3">
+                  <i class="fa-regular fa-calendar text-2xl"></i>
+
+                  <h5 class="ml-3 font-inter text-sm font-medium mt-[2px]">
+                    Schedule
+                  </h5>
+                </li>
+                <!-- li end -->
+                <!-- li start -->
+                <li
+                  class="text-[#FFFFFF] mt-6 flex bg-[#235940] py-2 pl-3 rounded-md relative"
+                >
+                  <i class="fa-regular fa-comment-dots text-2xl"></i>
+
+                  <h5
+                    class="ml-3 font-inter text-sm font-medium mt-[2px] after:absolute after:content-[''] after:w-[12px] after:h-[12px] after:bg-[#F79009] after:top-[35%] after:right-[5%] after:rounded-full"
+                  >
+                    <span>Students Messages</span>
+                  </h5>
+                </li>
+                <!-- li end -->
+                <li class="text-nav_iconColor mt-6 flex px-3">
+                  <i class="fa-regular fa-user text-2xl"></i>
+
+                  <h5
+                    class="ml-3 font-inter text-sm font-medium mt-[2px] mt-[2px]"
+                  >
+                    Student
+                  </h5>
+                </li>
+                <!-- li end -->
+              </ul>
+            </div>
+          </div>
+          <!-- menu part end -->
+        </div>
+        <!-- ========================================--
+                 chat_leftSideBar part end
+        =========================================== -->
+        <!-- ========================================--
+                  message part start
+        =========================================== -->
+        <div class="messages w-[83.68%] bg-bg_primary h-[1000px]">
+          <!--message topbar part start-->
+
+          <div
+            class="profile flex justify-between border-b border-border_color"
+          >
+            <!--left side part start-->
+            <h3
+              class="text-[#111927] font-inter font-semibold text-2xl px-6 py-5"
+            >
+              Messages
+            </h3>
+            <!--left side part end-->
+            <!--right side part start-->
+            <div class="right_side flex">
+              <span class="inline-block py-6 mr-5">
+                <i class="fa-regular fa-bell text-2xl text-[#6C737F]"></i>
+              </span>
+              <div class="py-4">
+                <img src="./assets/images/Avatar.png" />
+              </div>
+            </div>
+            <!--right side part end-->
+          </div>
+          <!--message topbar part end-->
+          <!--chatList & chatbox part start-->
+          <div class="item flex">
+            <!-- ========================================--
+                    chatlist part start
+          =========================================== -->
+            <div class="item1 w-[28.19%] mt-7">
+              <!--search part start-->
+              <div class="px-5">
+                <label class="relative block">
+                  <span class="sr-only">Search</span>
+                  <span
+                    class="absolute inset-y-0 left-[-8px] flex items-center pl-2"
+                  >
+                    <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
+                      <i
+                        class="fa-solid fa-magnifying-glass text-[#667085]"
+                      ></i>
+                    </svg>
+                  </span>
+                  <input
+                    class="placeholder:font-normal placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-[42px] pr-3 shadow-sm focus:outline-none text-base font-inter"
+                    placeholder="Search"
+                    type="text"
+                    name="search"
+                  />
+                </label>
+              </div>
+              <!--search part end-->
+              <!-- chatlist start -->
+              <div class="chat_lst flex mt-[22px] bg-[#F2F4F7] py-4 px-5">
+                <!--img work start-->
+                <div
+                  class="img w-12 h-12 border border-[#9DA4AE] border-opacity-25 flex items-center rounded-full justify-center relative"
+                >
+                  <div class="">
+                    <img src="./assets/images/Text.png" />
+                  </div>
+                  <div
+                    class="absolute w-[12px] h-[12px] bottom-0 right-0 bg-[#17B26A] rounded-full flex justify-center items-center"
+                  ></div>
+                </div>
+                <!--img work end-->
+                <div class="inbox grid gap-y-2">
+                  <div class="header flex">
+                    <div class="name pl-3 mt-[-8px]">
+                      <h2
+                        class="font-inter font-semibold text-base text-[#111927]"
+                      >
+                        Taufiq Rahman
+                      </h2>
+                    </div>
+                    <div class="time mt-[-6px] ml-auto">
+                      <h3
+                        class="text-[#9DA4AE] font-inter font-medium text-sm pl-5"
+                      >
+                        11:25 AM
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="msg pl-3 relative">
+                    <p
+                      class="mr-5 text-[#6C737F] font-inter font-normal text-base"
+                    >
+                      Hello, yes I’m available at...
+                    </p>
+                    <div
+                      class="absolute w-[22px] h-[22px] top-0 right-0 bg-[#F79009] rounded-full flex justify-center items-center"
+                    >
+                      <h4 class="text-[#ffffff]">1</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- chatlist end -->
+              <!-- chatlist start -->
+              <div
+                class="chat_lst flex mt-4 py-4 px-5 border-b border-border_color"
+              >
+                <!--img work start-->
+                <div
+                  class="img w-12 h-12 border border-[#9DA4AE] border-opacity-25 flex items-center rounded-full justify-center relative"
+                >
+                  <div class="">
+                    <img src="./assets/images/Avatar (2).png" />
+                  </div>
+                  <div
+                    class="absolute w-[12px] h-[12px] bottom-0 right-0 bg-[#D0D5DD] rounded-full flex justify-center items-center"
+                  ></div>
+                </div>
+                <!--img work end-->
+                <div class="inbox grid gap-y-2">
+                  <div class="header flex">
+                    <div class="name pl-3 mt-[-8px]">
+                      <h2
+                        class="font-inter font-semibold text-base text-[#111927]"
+                      >
+                        Noel Baldwin
+                      </h2>
+                    </div>
+                    <div class="time mt-[-6px] ml-auto">
+                      <h3 class="text-[#9DA4AE] font-inter font-medium text-sm">
+                        Yesterday
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="msg pl-3">
+                    <p
+                      class="mr-5 text-[#6C737F] font-inter font-normal text-base"
+                    >
+                      Great! Let me know if you..
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- chatlist end -->
+              <!-- chatlist start -->
+              <div
+                class="chat_lst flex mt-4 py-4 px-5 border-b border-border_color"
+              >
+                <!--img work start-->
+                <div
+                  class="img w-12 h-12 border border-[#9DA4AE] border-opacity-25 flex items-center rounded-full justify-center relative"
+                >
+                  <div class="">
+                    <img src="./assets/images/Avatar (3).png" />
+                  </div>
+                  <div
+                    class="absolute w-[12px] h-[12px] bottom-0 right-0 bg-[#D0D5DD] rounded-full flex justify-center items-center"
+                  ></div>
+                </div>
+                <!--img work end-->
+                <div class="inbox grid gap-y-2">
+                  <div class="header flex">
+                    <div class="name pl-3 mt-[-8px]">
+                      <h2
+                        class="font-inter font-semibold text-base text-[#111927]"
+                      >
+                        Bailey Richard
+                      </h2>
+                    </div>
+                    <div class="time mt-[-6px] ml-auto">
+                      <h3
+                        class="text-[#9DA4AE] font-inter font-medium text-sm pl-6"
+                      >
+                        Yesterday
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="msg pl-3">
+                    <p
+                      class="mr-5 text-[#6C737F] font-inter font-normal text-base"
+                    >
+                      Hello, yes I’m available at...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- chatlist end -->
+              <!-- chatlist start -->
+              <div class="chat_lst flex mt-4 py-4 px-5">
+                <!--img work start-->
+                <div
+                  class="img w-12 h-12 border border-[#9DA4AE] border-opacity-25 flex items-center rounded-full justify-center relative"
+                >
+                  <div class="">
+                    <img src="./assets/images/Avatar (4).png" />
+                  </div>
+                  <div
+                    class="absolute w-[12px] h-[12px] bottom-0 right-0 bg-[#17B26A] rounded-full flex justify-center items-center"
+                  ></div>
+                </div>
+                <!--img work end-->
+                <div class="inbox grid gap-y-2">
+                  <div class="header flex">
+                    <div class="name pl-3 mt-[-8px]">
+                      <h2
+                        class="font-inter font-semibold text-base text-[#111927]"
+                      >
+                        Nick Davidson
+                      </h2>
+                    </div>
+                    <div class="time mt-[-6px]">
+                      <h3
+                        class="text-[#9DA4AE] font-inter font-medium text-sm pl-9"
+                      >
+                        15/10/2023
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="msg pl-3">
+                    <p
+                      class="mr-5 text-[#6C737F] font-inter font-normal text-base"
+                    >
+                      Sure, thank you!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- chatlist end -->
+            </div>
+            <!-- ========================================--
+                    chatlist part end
+          =========================================== -->
+            <!-- ========================================--
+                    chatbox part start
+          =========================================== -->
+            <div class="item2 w-[71.81%]">
+              <div class="chahearder flex justify-between">
+                <div
+                  class="chat_lst flex bg-[#FFFFFF] mt-3 py-4 px-5 rounded-md"
+                >
+                  <!--img work start-->
+                  <div
+                    class="img w-12 h-12 border border-[#9DA4AE] border-opacity-25 flex items-center rounded-full justify-center relative"
+                  >
+                    <div class="">
+                      <img src="./assets/images/Text.png" />
+                    </div>
+                    <div
+                      class="absolute w-[12px] h-[12px] bottom-0 right-0 bg-[#17B26A] rounded-full flex justify-center items-center"
+                    ></div>
+                  </div>
+                  <!--img work end-->
+                  <div class="inbox grid gap-y-2">
+                    <div class="header flex">
+                      <div class="name pl-3 mt-[-8px]">
+                        <h2
+                          class="font-inter font-semibold text-base text-[#111927]"
+                        >
+                          Taufiq Rahman
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="msg pl-3 relative">
+                      <p
+                        class="mr-5 text-[#6C737F] font-inter font-normal text-base"
+                      >
+                        Mathematic
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- chatHeader left sie end -->
+                <div class="mt-5">
+                  <h2
+                    class="py-2.5 px-4 bg-[#235940] text-[#FFFFFF] rounded-md font-semibold font-inter text-sm"
+                  >
+                    Schedule sessions
+                  </h2>
+                </div>
+              </div>
+              <!-- chatHeader end -->
+              <div class="bg-[#F2F4F7] pb-12">
+                <div class="chatbox flex justify-end bg-[#F2F4F7] pt-[27px]">
+                  <div class="msg">
+                    <p
+                      class="text-[#4D5761] font-normal font-inter text-[12px]"
+                    >
+                      Friday 2:20pm
+                    </p>
+                    <h2
+                      class="w-[320px] px-3.5 py-2.5 bg-[#235940] rounded-tl-md rounded-b-md text-[#FFFFFF] font-inter font-normal text-base mt-[6px]"
+                    >
+                      Hey Taufiq, can you please review the latest design when
+                      you can?
+                    </h2>
+                  </div>
+                </div>
+                <div class="chatbox flex justify-start bg-[#F2F4F7] pt-[24px]">
+                  <div class="msg pl-7">
+                    <p
+                      class="text-[#4D5761] font-normal font-inter text-[12px]"
+                    >
+                      Friday 2:20pm
+                    </p>
+                    <h2
+                      class="w-[320px] px-3.5 py-2.5 bg-[#F9FAFB] rounded-md text-[#111927] font-inter font-normal text-base mt-[6px]"
+                    >
+                      Sure thing, I’ll have a look today.
+                    </h2>
+                  </div>
+                </div>
+                <div class="chatbox flex justify-end bg-[#F2F4F7] pt-[24px]">
+                  <div class="msg">
+                    <p
+                      class="text-[#4D5761] font-normal font-inter text-[12px]"
+                    >
+                      Friday 2:20pm
+                    </p>
+                    <h2
+                      class="w-[320px] px-3.5 py-2.5 bg-[#235940] rounded-tl-md rounded-b-md text-[#FFFFFF] font-inter font-normal text-base"
+                    >
+                      Some chats here
+                    </h2>
+                  </div>
+                </div>
+                <div class="chatbox flex justify-end bg-[#F2F4F7] pt-[6px]">
+                  <div class="msg">
+                    <h2
+                      class="w-[320px] px-3.5 py-2.5 bg-[#235940] rounded-tl-md rounded-b-md text-[#FFFFFF] font-inter font-normal text-base"
+                    >
+                      Hello, I’m available at the moment. I think we can have a
+                      session today.
+                    </h2>
+                  </div>
+                </div>
+                <div class="chatbox flex justify-start bg-[#F2F4F7] pt-[24px]">
+                  <div class="msg pl-7">
+                    <p
+                      class="text-[#4D5761] font-normal font-inter text-[12px]"
+                    >
+                      Friday 2:20pm
+                    </p>
+                    <h2
+                      class="w-[320px] px-3.5 py-2.5 bg-[#F9FAFB] rounded-md text-[#111927] font-inter font-normal text-base mt-[6px]"
+                    >
+                      Can you please review my exam here?
+                    </h2>
+                  </div>
+                </div>
+                <div class="chatbox flex justify-start bg-[#F2F4F7] pt-[6px]">
+                  <div
+                    class="chat_lst flex w-[320px] px-3.5 py-2.5 bg-[#FFFFFF] rounded-md ml-7"
+                  >
+                    <!--img work start-->
+                    <div
+                      class="img w-10 h-10 flex items-center justify-center relative"
+                    >
+                      <div class="icon">
+                        <i class="fa-regular fa-file-pdf text-[40px]"></i>
+                      </div>
+                    </div>
+                    <!--pdf section-->
+                    <div class="inbox">
+                      <div class="header flex">
+                        <div class="name pl-3">
+                          <h2
+                            class="font-inter font-medium text-sm text-[#344054]"
+                          >
+                            Mathematic Exam.pdf
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="msg pl-3 relative">
+                        <p
+                          class="text-[#6C737F] font-inter font-normal text-sm"
+                        >
+                          200 KB
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chatbox flex justify-end bg-[#F2F4F7] pt-[27px]">
+                  <div class="msg">
+                    <p
+                      class="text-[#4D5761] font-normal font-inter text-[12px]"
+                    >
+                      Friday 2:20pm
+                    </p>
+                    <h2
+                      class="w-[320px] pl-3.5 pr-12 py-2.5 bg-[#235940] rounded-tl-md rounded-b-md text-[#FFFFFF] font-inter font-normal text-base mt-[6px]"
+                    >
+                      Hello, yes I’m available at the moment. I think we can
+                      have a session today.
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <!-- chatbox end -->
+              <!-- =====================================
+                         text box part start
+              ========================================== -->
+              <div class="textbox bg-[#F2F4F7] pb-8 pl-7">
+                <textarea
+                  class="w-full h-[94px] mb-16 resize-none border border-[#D0D5DD] border-b-0 outline-0 rounded-t-md placeholder:pl-[14px] placeholder:pt-3 placeholder:font-inter placeholder:font-normal placeholder:text-base placeholder:text-[#667085]"
+                  placeholder="Type your messages..."
+                >
+                </textarea>
+                <div
+                  class="w-full h-[48px] flex items-center bg-[#FFFFFF] mt-[-70px] mb-16 relative border border-[#E5E7EB] border-t-0 rounded-md after:absolute after:left-[2%] after:top-0 after:content-[''] after:w-[96%] after:h-[1px] after:bg-[#E5E7EB]"
+                >
+                  <div class="icon text-[#9DA4AE]">
+                    <div>
+                      <i class="fa-solid fa-paperclip text-2xl pl-[14px]"></i>
+                      <i class="fa-regular fa-file-image text-2xl pl-5"></i>
+                    </div>
+                    <div class="absolute right-[2.5%] top-[15%]">
+                      <i
+                        class="fa-regular fa-paper-plane text-2xl rotate-45"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- =====================================
+                       text box part end
+            ========================================== -->
+            </div>
+            <!-- ========================================--
+                    chatbox part end
+            =========================================== -->
+          </div>
+          <!--chatList & chatbox part end-->
+        </div>
+
+        <!-- ========================================--
+              message part end
+        =========================================== -->
+        <!-- ========================================--
+              chat_leftSideBar part end
+        =========================================== -->
+      </div>
+    </div>
+    <!-- ===========================--
+            main part end
+    =============================== -->
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--fontawesome cdn-->
+  </body>
+</html>
